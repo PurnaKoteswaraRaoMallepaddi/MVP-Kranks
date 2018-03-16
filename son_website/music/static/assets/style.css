@@ -1,0 +1,125 @@
+@import url(http://fonts.googleapis.com/css?family=Carrois+Gothic|Francois+One);
+
+body {font:normal 16px/22px 'Carrois Gothic',Arial,Helvetica;	background:#111;color: #ccc;}
+
+h1,h2,h3,h4,h5,h6{ font-weight:normal;padding: 0;margin: 0;color: #fff;}
+h1,h2,h3{ font-family: 'Francois One',Arial,Helvetica;text-transform: uppercase;}
+h4,h5,h6{ font-family: 'Carrois Gothic',Arial,Helvetica;color: #ccc;}
+
+h3{font-size: 28px;margin-bottom: 20px;color: #666;}
+h3 span{font-size: 24px; }
+h4{font-size: 23px; margin-bottom:20px;line-height:30px;}
+h5{font-size: 20px;}
+
+small{color: #777;font-size: 13px;}
+
+p{margin-bottom: 25px;}
+
+blockquote {padding: 0px 20px;margin: 0 0 20px;border-left: 5px solid #aaa;font-size: 14px;line-height: 22px;font-style: italic;font-family: georgia;}
+
+.spacer{padding:55px 0 0 0;}
+.center{text-align: center;}
+.thumbnail{ background-color:#fff;}
+
+
+
+/*home*/
+.homeinfo{padding:250px 0 20px 0;}
+.homeinfo .player{margin-top: 70px;position: relative;}
+.homeinfo .player img.graphics{position: absolute;bottom: 167px;right: -24px;}
+.blockblack{background:rgba(0,0,0,0.8); border-radius: 10px; padding: 25px; }
+.fronttext h2{font-size:60px; line-height:60px;display: inline-block;padding:5px 10px;}
+.fronttext p{margin:0;background-color: rgba(0,0,0,0.7);display: inline-block;padding: 10px;}
+.overlay{z-index: 100;position: relative;}
+/*home*/
+
+/*color*/
+.bgcolor{background-color: #f2ab00;}
+.textcolor{color: #f2ab00;}
+a{color:#f2ab00; text-decoration:none}
+a:hover{color:#fff;text-decoration:none}
+/*color*/
+
+
+/*nav*/
+.navbar-brand{padding: 10px 15px;}
+.navbar-nav > li > a{font-size: 14px;}
+.navbar-inverse{background: #000;border:none;}
+/*nav*/
+
+
+
+/*releases*/
+.releases{margin-bottom: 20px;}
+.releases .album{background-color: #222;margin-bottom: 30px;}
+.releases .album .albumdetail{padding: 10px;}
+.releases .album .albumdetail h5{margin-bottom: 10px;}
+.releases .album .albumdetail a{font-size:14px; }
+/*releases*/
+
+/*blog*/
+.blogevent{color: #ccc;}
+.blogevent ul{padding: 0; list-style: none; margin-top: 35px;}
+.blogevent ul li{font-size: 13px;}
+.blogevent ul li p{margin: 0;line-height: 18px;}
+
+.events ul li{background-color: #191919;margin-bottom: 1px;}
+.events ul li h5{margin: 7px 0;}
+.events ul li .date{text-align: center;line-height: 38px;color: #444;text-shadow: 0px -1px 0px #000;padding-top: 10px;padding-bottom: 10px;background-color: #111}
+.events ul li .date b{display: block;font-size: 30px;}
+.events ul li .date span{font-size: 22px;}
+
+
+.ourblog ul li{margin-bottom: 20px;}
+.ourblog ul li img{float: left; margin-right: 20px;}
+.ourblog ul li .blogtext{overflow: hidden;}
+/*blog*/
+
+
+
+
+/*modal*/
+.modal-dialog{max-width: 800px; width: 95%;}
+.modal-content{overflow: auto; padding:0 20px;color: #444;}
+.modal-content h2{color: #222;margin: 15px 0;}
+button.close{position: absolute;right: 0;background: #FFF;width: 25px;height: 25px;line-height: 9px;}
+#blog small{margin-bottom: 10px;display: block;}
+/*modal*/
+
+
+
+
+
+/*contact*/
+.contactform textarea,.contactform input{width: 100%;padding:2%;border:1px solid #ccc;margin-bottom: 20px;border-radius: 5px;outline: none;}
+.contactform .map{border:none;box-shadow:0;margin-top: 50px;}
+.contactform button{border:none;width: 100%; padding: 7px 0;font-size: 25px;}
+.contactform iframe{float: left;}
+/*contact*/
+
+
+#footer{background-color: #000; padding: 5px 0; color: #fff; font-size: 14px;color: #aaa;margin-top: 50px; z-index: 100;position: relative;}
+
+
+/*background slider*/
+.carousel{position: fixed; top: 0; left: 0;right: 0;bottom: 0; z-index:10;width: 100%;}
+.carousel .item {-webkit-transition: opacity 2s;
+    -moz-transition: opacity 1s;
+    -ms-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;}
+.carousel .active.left {left:0;opacity:0;z-index:2;}
+.carousel .next {left:0;opacity:1;z-index:1;}
+.carousel-inner > .item > img, .carousel-inner > .item > a > img{width: 100%;}
+/*background slider*/
+
+/*animation*/
+#about,.album,.blogevent ul li,h3,h4{visibility: hidden;}
+.animated{visibility: visible !important;}
+/*animation*/
+
+@media (max-width: 700px) {
+	.homeinfo{padding-top: 100px;}
+	.events ul li,.events ul li .date{background: none;}
+	.events ul li .date b{display: inline;font-size: 22px;border-right: 1px solid #333;padding-right: 10px;margin-right: 10px;}
+}
