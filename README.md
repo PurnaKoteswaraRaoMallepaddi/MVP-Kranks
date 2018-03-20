@@ -1,5 +1,5 @@
-# MVP-Kranks
-"Music  Web application for mood based playlist creation".
+# MVP-Kranks:
+-"Music  Web application for mood based playlist creation".
 -In the current world there are no mood stabalising tools or apps for humans untill now ,  where we give a web interface which will predict the playlist according to your mood and the other external  stimulies and try our hand in balencing it.
 
 
