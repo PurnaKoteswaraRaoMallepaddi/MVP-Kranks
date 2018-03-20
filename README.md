@@ -10,8 +10,8 @@ The input for this project is jusi your face,
 The output of the project is playlist to stabalise the mood of the person , and one most user interactive website
 
 # PROCESS:
-1.we use 'google api' for mood prediction [Artificial Intelligence].
-2.Django   as the interface[Interface].
-3.html,css,js as web designing tools.
-4.SPOTIFY api, SOUND Cloud api for playing the music [genre prediction].
-5.Sqlite3 as the data base.
+1. we use 'google api' for mood prediction [Artificial Intelligence].
+2. Django   as the interface[Interface].
+3. html,css,js as web designing tools.
+4. SPOTIFY api, SOUND Cloud api for playing the music [genre prediction].
+5. Sqlite3 as the data base.
