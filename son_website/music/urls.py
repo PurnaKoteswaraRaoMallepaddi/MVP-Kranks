@@ -5,5 +5,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-    url(r'^$', views.index,name = 'index'),
+    url(r'^$', views.log_in,name = 'log_in'),
+    url(r'^check/',views.homepage,name = 'homepage')
+
 ]

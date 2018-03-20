@@ -1,6 +1,10 @@
 from django.db import models
 
 # Create your models here.
+class log_in(models.Model):
+	id = models.CharField(max_length=25,primary_key = True)
+	pass_word = models.CharField(max_length=25)
+
 class Album(models.Model):
 	atrist = models.CharField(max_length=250)
 	album_title = models.CharField(max_length=500)

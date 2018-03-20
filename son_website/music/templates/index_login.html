@@ -1,0 +1,73 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Material Design Login Form</title>
+  
+  
+  
+      <link rel="stylesheet" href="{% static 'css/style.css' %}">
+ <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>  
+</head>
+
+<body>
+
+  <!--Google Font - Work Sans-->
+<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,700' rel='stylesheet' type='text/css'>
+<link rel="import" href="https://www.polymer-project.org/0.5/components/paper-ripple/paper-ripple.html">
+
+<div class="container">
+  <div class="profile">
+    <button class="profile__avatar" id="toggleProfile">
+     <img src="http://gravatar.com/avatar/69f34259a9d0b7df04f0b50893c469ed?s=80" alt="Avatar" /> 
+    </button>
+    <div class="profile__form">
+      <div class="profile__fields">
+        <div class="field">
+          <input type="text" id="fieldUser" class="input" required pattern=.*\S.* />
+          <label for="fieldUser" class="label">Username</label>
+        </div>
+        <div class="field">
+          <input type="password" id="fieldPassword" class="input" required pattern=.*\S.* />
+          <label for="fieldPassword" class="label">Password</label>
+        </div>
+        <div class="profile__footer">
+           <div class="button raised blue">
+            <a class="center" href = "check">LOGIN</a>
+            <paper-ripple fit></paper-ripple>
+          </div>
+        </div>
+      </div>
+     </div>
+  </div>
+</div>
+<script>
+function check(){
+    user_id = document.getElementById("fieldUser").value;
+    pass_word = document.getElementById("fieldPassword").value;
+    data = {user_id:user_id, pass_word:pass_word}
+    alert('asd')
+    $.ajax({
+            url : '/music/check',
+            data : data,
+            dataType : "json",
+            type : 'GET',
+            success : function(data) {
+              alert(data);
+            }
+    });
+}
+</script>
+
+  
+  
+
+    <script  src="{% static 'js/index.js' %}"></script>
+
+
+
+
+</body>
+</html>
